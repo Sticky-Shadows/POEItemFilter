@@ -1,0 +1,186 @@
+
+
+
+# You can add comments by putting a # at the start of the line 
+# > < = >= and <= all (should) work as operators.
+# Blocks and coloring of things goes from the start of the list down, so if you have rares colored blue, 6l colored red, and find a rare 6l, it'll be blue, not red.
+
+#Name Notes
+#ItemLevel The level the item was generated at.
+#DropLevel The level that the item starts dropping at.
+#Quality The amount of quality on the item.
+#Rarity Rarity of the item. Rarities are Normal, Magic, Rare or Unique.
+#Class The item class. Specifying part of a class name is allowed and will match any classes with that text in the name. So for example "One Hand" will match both "One Hand Sword" and "One Hand Axe"
+#BaseType The base type of the item. Specifying a part of a base type name is allowed and will match any of the base types with that text in the name.
+#Sockets Total number of sockets that the item has.
+#LinkedSockets The size of the largest group of linked sockets that the item has.
+#SocketGroup A group of linked sockets that contains the specified combination. For example, RRG will match any group that contains two red sockets linked with a green socket.
+
+#SetBorderColor R G B Would hope that these are self explanatory.
+#SetTextColor R G B 
+#SetBackgroundColor R G B
+#PlayAlertSound # from 1 to 9 
+
+
+#Just in case we actually find one
+Show
+    BaseType "Fishing Rod"
+    SetTextColor 255 0 255
+    PlayAlertSound 8
+
+#Possibly Add a quality modifier once established esp if you can always show, say, spell echo.
+Show
+    Class Gem
+
+#Scraps, Whetstones, Baubles, and the occasional Chisel
+Show
+    Quality 20
+
+#Distinguishing the rare 6l just in case.
+Show
+    LinkedSockets 6
+    SetTextColor 0 255 0 
+    SetBorderColor 255 0 255
+	PlayAlertSound 8
+
+#Remember to change this to 2 or 3 when you're running low level characters
+Show
+	LinkedSockets >= 5
+    SetBorderColor 255 225 0
+
+#Jews
+Show
+    Sockets 6
+
+
+#Gotta get dem chromes
+Show
+    SocketGroup RGB
+
+
+#Yay Pretty Colors
+Show
+    BaseType "Chaos Orb" "Exalted Orb" "Eternal Orb" "Mirror of Kalandra" "Albino Rhoa Feather"
+    SetTextColor 255 0 255
+    SetBorderColor 0 255 0
+    PlayAlertSound 8
+
+#Moniez and Maps
+Show
+    Class Map Currency
+    SetBorderColor 255 255 255
+
+
+#Chisel Recipe, shows 12+Q blues cause that puts them at same/cheaper equiv whetstone price.
+Show
+    BaseType "Gavel"
+    Rarity = Normal
+	SetTextColor 189 95 0
+	
+Show
+    BaseType "Stone Hammer"
+    Rarity = Normal
+Show
+    BaseType "Rock Breaker"
+    Rarity = Normal
+
+Show
+    BaseType "Gavel"
+    Rarity = Magic
+    Quality >= 12
+	SetTextColor 189 95 0
+	
+Show
+    BaseType "Stone Hammer"
+    Rarity = Magic
+    Quality >= 12
+Show
+    BaseType "Rock Breaker"
+    Rarity = Magic
+    Quality >= 12
+
+
+#For Baubles, feel free to delete or change # to 13 so you only have to keep 2 on hand and don't have to bother with math or procurement.
+Show
+    BaseType "Mana Flask" 
+    SetBorderColor 0 0 255
+    SetTextColor 0 0 255
+    SetBackgroundColor 225 225 255
+	Quality >= 1
+
+Show
+    BaseType "Life Flask"
+    SetBorderColor 255 0 0
+    SetTextColor 255 0 0
+    SetBackgroundColor 255 225 225
+	Quality >= 1
+
+	Hide 
+		BaseType "Small Life Flask" "Small Mana Flask"
+		ItemLevel <= 14
+	Hide
+		BaseType "Medium Life Flask" "Medium Mana Flask"
+		ItemLevel <= 18
+	Hide
+		BaseType "Large Life Flask" "Large Mana Flask"
+		ItemLevel <= 26
+	Hide
+		BaseType "Greater Life Flask" "Greater Mana Flask"
+		ItemLevel <= 34
+	Hide
+		BaseType "Grand Life Flask" "Grand Mana Flask"
+		ItemLevel <= 37
+	Hide
+		BaseType "Giant Life Flask" "Giant Mana Flask"
+		ItemLevel <= 45
+	Hide
+		BaseType "Colossal Life Flask" "Colossal Mana Flask"
+		ItemLevel <= 53
+	Hide
+		BaseType "Sacred Life Flask" "Sacred Mana Flask"
+		ItemLevel <= 60
+	Hide
+		BaseType "Hallowed Life Flask" "Hallowed Mana Flask"
+		ItemLevel <= 65
+	Hide
+		BaseType "Sanctified Life Flask" "Sanctified Mana Flask"
+		ItemLevel <= 70
+		
+Show
+    BaseType "Mana Flask" 
+    SetBorderColor 0 0 255
+    SetTextColor 0 0 255
+    SetBackgroundColor 225 225 255
+
+Show
+    BaseType "Life Flask"
+    SetBorderColor 255 0 0
+    SetTextColor 255 0 0
+    SetBackgroundColor 255 225 225
+
+	
+#Showing general Rare items	
+Show
+    Rarity = Rare
+    ItemLevel >= 60
+    ItemLevel <= 74
+    SetBorderColor 255 255 119
+
+Show
+    Rarity = Rare
+    ItemLevel >= 75
+    SetBorderColor 176 196 222
+Show
+    Rarity >= Rare
+	
+Show
+    Class Jewel
+	
+Show
+    BaseType "Occultist's Vestment"
+	SetTextColor 189 95 0
+	
+
+#Hides everything else
+Hide
+
