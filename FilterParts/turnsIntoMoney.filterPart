@@ -1,0 +1,54 @@
+#Scraps, Whetstones, Baubles, and the occasional Chisel
+	Show
+		Quality 20
+
+#Jews
+	Show
+		Sockets 6
+
+#Gotta get dem chromes
+	Show
+		SocketGroup RGB
+	
+#Chisel Recipe, shows 12+Q blues cause that puts them at same/cheaper equiv whetstone price.
+	Show
+		BaseType "Gavel"
+		Rarity = Normal
+		SetTextColor 189 95 0
+	
+	Show
+		BaseType "Stone Hammer"
+		Rarity = Normal
+	Show
+		BaseType "Rock Breaker"
+		Rarity = Normal
+
+	Show
+		BaseType "Gavel"
+		Rarity = Magic
+		Quality >= 12
+		SetTextColor 189 95 0
+	
+	Show
+		BaseType "Stone Hammer"
+		Rarity = Magic
+		Quality >= 12
+	Show
+		BaseType "Rock Breaker"
+		Rarity = Magic
+		Quality >= 12
+		
+#For Baubles, feel free to delete or change # to 13 so you only have to keep 2 on hand and don't have to bother with math or procurement.
+	Show	
+		BaseType "Mana Flask" 
+		SetBorderColor 0 0 255
+		SetTextColor 0 0 255
+		SetBackgroundColor 225 225 255
+		Quality >= 1
+
+	Show
+		BaseType "Life Flask"
+		SetBorderColor 255 0 0
+		SetTextColor 255 0 0
+		SetBackgroundColor 255 225 225
+		Quality >= 1

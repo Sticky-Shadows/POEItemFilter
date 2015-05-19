@@ -1,0 +1,36 @@
+#Yay Pretty Colors
+	Show
+		BaseType "Chaos Orb"
+		SetTextColor 255 0 255
+		SetBorderColor 0 255 0
+		PlayAlertSound 
+	
+	Show
+		BaseType "Exalted Orb" "Eternal Orb" "Mirror of Kalandra" "Albino Rhoa Feather"
+		SetTextColor 255 0 255
+		SetBorderColor 0 255 0
+		PlayAlertSound 8
+		SetFontSize 42
+		
+#Moniez and Maps
+	Show
+		Class Map Currency
+		SetBorderColor 255 255 255
+		
+#Distinguishing the rare 6l just in case. 
+	Show
+		LinkedSockets 6
+		SetTextColor 0 255 0 
+		SetBorderColor 255 0 255
+		PlayAlertSound 8
+		
+#High Sockets
+	Show
+		LinkedSockets >= 5
+		SetBorderColor 255 225 0
+		
+#Just in case we actually find one
+	Show
+		BaseType "Fishing Rod"
+		SetTextColor 255 0 255
+		PlayAlertSound 8

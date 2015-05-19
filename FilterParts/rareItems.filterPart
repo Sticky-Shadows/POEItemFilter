@@ -1,0 +1,23 @@
+#Showing general Rare items	
+	Show
+		Rarity = Rare
+		ItemLevel >= 60
+		ItemLevel <= 74
+		SetBorderColor 255 255 119
+	
+	Show
+		Rarity = Rare
+		ItemLevel >= 75
+		SetBorderColor 176 196 222
+	Show
+		Rarity >= Rare
+		
+	Show
+		Class Jewel
+		
+	Show
+		BaseType "Occultist's Vestment"
+		SetTextColor 189 95 0
+		
+	Show 
+		BaseType Card

@@ -1,0 +1,49 @@
+#Flasks
+	Hide 
+		BaseType "Small Life Flask" "Small Mana Flask"
+		ItemLevel >= 14
+	Hide
+		BaseType "Medium Life Flask" "Medium Mana Flask"
+		ItemLevel >= 18
+	Hide
+		BaseType "Large Life Flask" "Large Mana Flask"
+		ItemLevel >= 26
+	Hide
+		BaseType "Greater Life Flask" "Greater Mana Flask"
+		ItemLevel >= 34
+	Hide
+		BaseType "Grand Life Flask" "Grand Mana Flask"
+		ItemLevel >= 37
+	Hide
+		BaseType "Giant Life Flask" "Giant Mana Flask"
+		ItemLevel >= 45
+	Hide
+		BaseType "Colossal Life Flask" "Colossal Mana Flask"
+		ItemLevel >= 53
+	Hide
+		BaseType "Sacred Life Flask" "Sacred Mana Flask"
+		ItemLevel >= 60
+	Hide
+		BaseType "Hallowed Life Flask" "Hallowed Mana Flask"
+		ItemLevel >= 65
+	Hide
+		BaseType "Sanctified Life Flask" "Sanctified Mana Flask"
+		ItemLevel >= 70
+		
+	Show
+		BaseType "Mana Flask" 
+		SetBorderColor 0 0 255
+		SetTextColor 0 0 255
+		SetBackgroundColor 225 225 255
+	
+	Show
+		BaseType "Life Flask"
+		SetBorderColor 255 0 0
+		SetTextColor 255 0 0
+		SetBackgroundColor 255 225 225
+		
+	Show
+		Class "Utility Flasks"
+		SetBorderColor 0 255 0
+		SetTextColor 0 255 0
+		SetBackgroundColor 225 255 225

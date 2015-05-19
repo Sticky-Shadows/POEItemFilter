@@ -1,0 +1,19 @@
+# You can add comments by putting a # at the start of the line 
+# > < = >= and <= all (should) work as operators.
+# Blocks and coloring of things goes from the start of the list down, so if you have rares colored blue, 6l colored red, and find a rare 6l, it'll be blue, not red.
+
+#Name Notes
+#ItemLevel The level the item was generated at.
+#DropLevel The level that the item starts dropping at.
+#Quality The amount of quality on the item.
+#Rarity Rarity of the item. Rarities are Normal, Magic, Rare or Unique.
+#Class The item class. Specifying part of a class name is allowed and will match any classes with that text in the name. So for example "One Hand" will match both "One Hand Sword" and "One Hand Axe"
+#BaseType The base type of the item. Specifying a part of a base type name is allowed and will match any of the base types with that text in the name.
+#Sockets Total number of sockets that the item has.
+#LinkedSockets The size of the largest group of linked sockets that the item has.
+#SocketGroup A group of linked sockets that contains the specified combination. For example, RRG will match any group that contains two red sockets linked with a green socket.
+
+#SetBorderColor R G B Would hope that these are self explanatory.
+#SetTextColor R G B 
+#SetBackgroundColor R G B
+#PlayAlertSound # from 1 to 9 

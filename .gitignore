@@ -1,7 +1,8 @@
 *
 
 !.gitignore
-!*.filterPart
-!*.toFilter
+!FilterParts/*.filterPart
+!FilterParts/*.toFilter
 !buildFilter.bat
 !buildAll.bat
+!FilterParts
