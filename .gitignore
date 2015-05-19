@@ -3,4 +3,5 @@
 !.gitignore
 !*.filterPart
 !*.toFilter
-!buildFilters.bat
+!buildFilter.bat
+!buildAll.bat
