@@ -21,6 +21,8 @@
 		
 	Show 
 		BaseType Card
+	Show
+		BaseType Divination Card 
 	
 
 #Possibly Add a quality modifier once established esp if you can always show, say, spell echo.
