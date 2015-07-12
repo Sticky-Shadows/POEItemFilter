@@ -3,4 +3,5 @@ turnsIntoMoney.filterPart
 generallyGoodStuff.filterPart
 flasks.filterPart
 rareItems.filterPart
+showUnder20.filterPart
 hideAll.filterPart

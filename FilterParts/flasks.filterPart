@@ -39,11 +39,11 @@
 	Show
 		BaseType "Life Flask"
 		SetBorderColor 255 0 0
-		SetTextColor 255 0 0
+		SetTextColor 0 0 0
 		SetBackgroundColor 255 225 225
 		
 	Show
 		Class "Utility Flasks"
 		SetBorderColor 0 255 0
-		SetTextColor 0 255 0
+		SetTextColor 0 0 0
 		SetBackgroundColor 225 255 225

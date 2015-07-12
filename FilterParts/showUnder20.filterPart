@@ -1,0 +1,5 @@
+Show
+	ItemLevel <= 20
+	SetTextColor 200 200 200
+	SetBackgroundColor 0 0 0 100
+	SetBorderColor 200 200 200 100
